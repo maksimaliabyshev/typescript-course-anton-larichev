@@ -14,19 +14,28 @@ type Role = {
 type UserWithRole = User & Role;
 type UserOrRole = User | Role;
 
-let user: UserWithRole = {
+let user1: UserWithRole = {
     name: 'piter',
     age: 33,
     skills: ['a', 'b'],
     id: 1,
 };
+let user2: UserOrRole = {
+    name: 'piter',
+    // age: 33,
+    // skills: ['a', 'b'],
+    id: 1,
+};
+
+
+
 // composite type
 type UserWithRoleComposite = {
     user: User;
     role: Role;
 };
 
-let user2: UserWithRoleComposite = {
+let userCompose: UserWithRoleComposite = {
     user: {
         name: 'Marat',
         age: 30,
