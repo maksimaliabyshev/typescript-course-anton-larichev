@@ -5,7 +5,7 @@ let input: unknown;
 input = 3;
 input = ['abc', 'dfe'];
 
-let res: string = input;
+let res: string = input; //error
 
 function run(i: unknown) {
     if (typeof i == 'number') {
